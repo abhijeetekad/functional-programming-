@@ -126,16 +126,14 @@ const arr = [
   { id: 2, amount: 100 },
 ];
 
-output : [{id:1,amount:300},{id:2,amount:200}] 
-const newArr = arr.reduce((acc,curr)=>{
-  let currentId = curr.id;
-  // console.log(currentId)
-  if(curr.id){
-    // return {.acc,curr.id}
-  }else{
-    
+const totalAmount = (a, b) => {
+  const index = a.findIndex((item) => item.id === b.id);
+  if (index === -1) {
+    return [...a, b];
+  } else {
+    a[index].amount = a[index].amount + b.amount;
+    return [...a];
   }
-  // return currentId
-  
-},[])
-console.log(newArr)
+};
+
+console.log(arr.reduce(totalAmount, []));
