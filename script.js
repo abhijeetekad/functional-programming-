@@ -61,7 +61,6 @@
 
 // const arr = ["You", "all", "are", "rockstars"];
 
-
 // const newArr = arr.reduce((acc,curr,ind)=>{
 //   // console.log(curr)
 //   // console.log(ind)
@@ -73,7 +72,7 @@
 // ```jsx
 // const arr = ["Violet", "Indigo", "Blue", "Green", "Yellow", "Orange", "Red"]
 
-// Your output should be: 
+// Your output should be:
 // Violet-Indigo-Blue-Green-Yellow-Orange-Red
 // const arr = ["Violet", "Indigo", "Blue", "Green", "Yellow", "Orange", "Red"]
 // const splitArr = arr.join("-")
@@ -116,24 +115,22 @@
 // console.log(iceCreamTotals)
 /*************************************/
 
+// const arr = [
+//   { id: 1, amount: 100 },
+//   { id: 1, amount: 100 },
+//   { id: 1, amount: 100 },
+//   { id: 2, amount: 100 },
+//   { id: 2, amount: 100 },
+// ];
 
+// const totalAmount = (a, b) => {
+//   const index = a.findIndex((item) => item.id === b.id);
+//   if (index === -1) {
+//     return [...a, b];
+//   } else {
+//     a[index].amount = a[index].amount + b.amount;
+//     return [...a];
+//   }
+// };
 
-const arr = [
-  { id: 1, amount: 100 },
-  { id: 1, amount: 100 },
-  { id: 1, amount: 100 },
-  { id: 2, amount: 100 },
-  { id: 2, amount: 100 },
-];
-
-const totalAmount = (a, b) => {
-  const index = a.findIndex((item) => item.id === b.id);
-  if (index === -1) {
-    return [...a, b];
-  } else {
-    a[index].amount = a[index].amount + b.amount;
-    return [...a];
-  }
-};
-
-console.log(arr.reduce(totalAmount, []));
+// console.log(arr.reduce(totalAmount, []));
